@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NPC
+  - Chest
+  - hazard
+  - Fighter
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Players
+  - Floors
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 1289199615
+    locked: 0
+  - name: hazard
+    uniqueID: 2868083791
+    locked: 0
+  - name: NPC
+    uniqueID: 2911579127
+    locked: 0
+  - name: Chest
+    uniqueID: 1190803997
+    locked: 0
+  - name: nextLevel
+    uniqueID: 2159506273
+    locked: 0
+  - name: Enemy
+    uniqueID: 1343820857
+    locked: 0
+  - name: Weapon
+    uniqueID: 1824026969
+    locked: 0
+  - name: Player
+    uniqueID: 1190734927
+    locked: 0
+  - name: Walls
+    uniqueID: 2749939037
+    locked: 0
+  - name: PauseMenu
+    uniqueID: 1580519605
+    locked: 0
