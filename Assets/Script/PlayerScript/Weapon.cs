@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Xml.Serialization;
 using UnityEngine;
 
 public class Weapon : Collidable
@@ -9,8 +6,6 @@ public class Weapon : Collidable
     public int damagePoint = 1;
     public float pushForce = 2.0f;
 
-    private SpriteRenderer spriteRenderer;
-
     private Animator animator;
     private float cooldown = 0.5f;
     private float lastSwing;
@@ -18,7 +13,6 @@ public class Weapon : Collidable
     protected override void Start()
     {
         base.Start();
-        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
 

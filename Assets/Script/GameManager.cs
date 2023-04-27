@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public List<int> weaponPrices;
 
     public Player player;
+    public RectTransform hitPoint;
 
     public FloatingTextManager floatingTextManager;
 
@@ -33,6 +34,17 @@ public class GameManager : MonoBehaviour
         Instance = this;
         SceneManager.sceneLoaded += LoadState;
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public void OnHitpoingChange()
+    {
+        float ratio = player.hitPoint / player.maxHitPoint;
+        hitPoint.localScale = new Vector3(1, ratio, 1);
     }
 
     //SaveState

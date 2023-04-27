@@ -1,7 +1,5 @@
-using UnityEngine.InputSystem;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
 public class Collidable : MonoBehaviour
 {
     public ContactFilter2D filter;

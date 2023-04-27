@@ -1,16 +1,31 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(BoxCollider2D))]
-[RequireComponent(typeof(Rigidbody2D))]
+
 public class Player : Mover
 {
+    private void Awake()
+    {
+
+        DontDestroyOnLoad(gameObject);    
+    }
+
     private void FixedUpdate()
     {
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
         UpdateMotor(new Vector3(x, y, 0));
+    }
+
+    private void Update()
+    {
+        if (hitPoint <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+            Death();
+        }
     }
     //[SerializeField] private Animator _animator;
     //[SerializeField] private BoxCollider2D boxCollider2D;

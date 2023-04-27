@@ -11,7 +11,7 @@ public class NextStage : Collidable
         {
             GameManager.Instance.SaveState();
             string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
